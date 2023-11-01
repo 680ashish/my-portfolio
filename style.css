@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    padding-top: 2px;
+}
+body{
+    background-color: #F2F2F2;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+/* Reset some default styles for the ul and li elements */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+/* anchor hover animations */
+.middle-nav a {
+    display: inline-block;
+    position: relative;
+
+
+  }
+
+  
+  .middle-nav a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .middle-nav a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    
+  }
+
+
+/* Style the navigation bar */
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 20px 20px; */
+    /* background-color: #F2F2F2; */
+    /* backdrop-filter: blur(5px); */
+    background: none;
+    font-size: 16px;
+    font-style: bold;
+
+}
+.nav-logo{
+    max-width: 45px;
+    padding: 0;
+}
+
+.navbar a{
+    color: black;
+    /* font-style: "__Montserrat_cce811","__Montserrat_Fallback_cce811"; */
+}
+
+
+/* Style each navigation list */
+.left-nav{
+    size: 16px;
+    /* border: 3px solid red; */
+}
+.left-nav, .middle-nav, .right-nav {
+    display: flex;
+
+}
+.right-nav i{
+    margin: 0 12px;
+    font-size: 24px;
+    transition: transform 0.2s;
+}
+.right-nav i:hover{
+    transform: scale(1.1);
+}
+/* Style list items and links */
+.left-nav li{
+    margin: 0 10px;
+
+}
+.middle-nav li{
+    margin: 0 10px;
+    padding-top: 18px;
+}
+.right-nav {
+    margin: 0 10px;
+    padding-top: 10px;
+}
+
+
+
+
+/* ---------------- main section ------------- */
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* font-size: 50px; */
+    background-image: url("./assets/images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    /* border-bottom:1px solid #000000; */
+}
+.left-img{
+    padding-top: 16px;
+}
+.main h3{
+    font-size: 3.75rem;
+}
+.main p{
+    font-size: 1.2rem;
+}
+.over{
+    font-size: 1rem;
+}
+.right-buttons{
+    margin-top: 2rem;
+}
+.right-buttons a{
+    border: 3px solid rgba(255, 255, 255, 0);
+    border-radius: 0.6rem;
+    margin-right: 0.5rem;
+    padding: 15px 30px 15px 35px;
+    /* border: 3px solid red; */
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.resume-button{
+    background-color: #121212;
+    color: rgb(255, 255, 255);
+}
+.bx-right-top-arrow-circle{
+    font-size: 20px;
+    margin: 0;
+}
+.resume-button:hover{
+    background-color: white;
+    color: black;
+    border: 3px solid #121212;
+    transition: all 0.2s linear;
+    scale: 1.1;
+}
+.right-buttons .contact-button{
+    /* background-color: aqua; */
+    color: black;
+    /* border: 3px solid rgba(255, 255, 255, 0); */
+    border-radius: 0.6rem;
+    text-decoration: underline;
+    /* font-size: 16px; */
+    text-transform: uppercase;
+    
+}
+.contact-button:hover{
+    border: 3px solid #121212;;
+    border-radius: 0.6rem;
+    transition: all 0.2s linear;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 12px 10px 12px;
+}
