@@ -12,6 +12,7 @@ html{
 body{
     background-color: #F2F2F2;
     font-family: 'Josefin Sans', sans-serif;
+    
 
 }
 /* Reset some default styles for the ul and li elements */
@@ -132,10 +133,12 @@ ul {
     background-size: cover;
     height: 700px;
     border-bottom: 1px solid black;
+    
     /* border-bottom:1px solid #000000; */
 }
 .left-img{
     padding-top: 16px;
+    opacity: 0.5;
 }
 .main h3{
     font-size: 3.75rem;
